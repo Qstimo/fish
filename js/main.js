@@ -25,6 +25,23 @@ $('.product__name').slick({
     vertical: true,
     prevArrow: '<button type="button" class="product-prev"><img src="images/product-prev.svg" alt=""></button>',
     nextArrow: '<button type="button" class="product-next"><img src="images/product-next.svg" alt=""></button>',
+    responsive:[
+        {
+        breakpoint: 891,
+        settings: {
+                vertical: false,
+                slidesToShow: 3,
+                arrows: false,
+                dots: true
+        },
+        breakpoint: 461,
+        settings:{
+                vertical: false,
+                slidesToShow: 1,
+                arrows: false,
+                dots: true
+        }
+    }]
     
 })
 
@@ -33,7 +50,8 @@ $('.product__content').slick({
     slidesToScroll: 1,
     asNavFor: '.product__name',
     fade: true,
-    arrows: false
+    arrows: false,
+    
     
 })
 
